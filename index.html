@@ -1,0 +1,40 @@
+<!--
+File: index.html
+GUI Assignment: HW3
+Description: Creating an Interactive Dynamic Table
+Matthew Lorette Anaya, UMass Lowell Computer Science, Matthew_loretteanaya@student.uml.edu
+Copyright (c) 2023 by Matt. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Matthew Lorette Anaya on June 16, 2023
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Interactive Dynamic Multiplication Table</title>
+    <link rel="stylesheet" href="css/multiplicationStyle.css">
+    <script src="js/multiplicationScript.js"></script>
+  </head>
+  <body>
+    <form id="multiplicationForm">
+        <fieldset>
+            <legend>Multiplier Range</legend>
+            <label for="multiplierMinValue">Minimum</label>
+            <input type="number" name="multiplierMinValue" required>
+        
+            <label for="multiplierMaxValue">Maximum</label>
+            <input type="number" name="multiplierMaxValue" required>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Multiplicand Range</legend>
+            <label for="multiplicandMinValue">Minimum</label>
+            <input type="number" name="multiplicandMinValue" required>
+        
+            <label for="multiplicandMaxValue">Maximum</label>
+            <input type="number" name="multiplicandMaxValue" required>
+        </fieldset>
+
+        <input type="submit" value="Generate Multiplication Table">
+    </form>
+  </body>
+</html>
